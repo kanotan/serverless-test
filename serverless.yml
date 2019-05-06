@@ -9,3 +9,5 @@ provider:
 functions:
   hello:
     handler: handler.hello
+  time:
+    handler: handler.time
