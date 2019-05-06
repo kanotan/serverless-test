@@ -9,5 +9,16 @@ provider:
 functions:
   hello:
     handler: handler.hello
+    timeout: 10
+    events:
+      - http:
+          path: kanotan-serverless/hello
+          method: get
   time:
     handler: handler.time
+    timeout: 10
+    events:
+      - http:
+          path: kanotan-serverless/time
+          method: get
+
